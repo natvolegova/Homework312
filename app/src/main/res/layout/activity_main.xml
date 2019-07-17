@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        style="@style/result"
+        android:text="@string/btn_0" />
+
+    <TextView
+        android:id="@+id/txtoutputResult"
+        style="@style/resultString"
+        android:layout_above ="@id/liner_action_v"
+        android:text="@string/btn_0" />
+
+    <LinearLayout
+        android:id="@+id/liner_action_v"
+        style="@style/line_vertical"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/result">
+
+        <TextView
+            android:id="@+id/txt_division"
+            style="@style/btn_action"
+            android:text="@string/btn_division" />
+
+        <TextView
+            android:id="@+id/txt_multiplication"
+            style="@style/btn_action"
+            android:text="@string/btn_multiplication" />
+
+        <TextView
+            android:id="@+id/txt_minus"
+            style="@style/btn_action"
+            android:text="@string/btn_minus" />
+
+        <TextView
+            android:id="@+id/txt_plus"
+            style="@style/btn_action"
+            android:text="@string/btn_plus" />
+
+        <TextView
+            android:id="@+id/txt_equal"
+            style="@style/btn_action"
+            android:text="@string/btn_equal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_action_h"
+        style="@style/line"
+        android:layout_above="@id/liner1"
+        android:layout_toStartOf="@id/liner_action_v">
+
+        <TextView
+            android:id="@+id/txt_c"
+            style="@style/btn_num"
+            android:text="@string/btn_c" />
+
+        <TextView
+            android:id="@+id/txt_back"
+            style="@style/btn_num"
+            android:text="@string/btn_back" />
+
+        <TextView
+            android:id="@+id/txt_percent"
+            style="@style/btn_num"
+            android:text="@string/btn_percent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        style="@style/line"
+        android:layout_above="@id/liner2"
+        android:layout_toStartOf="@id/liner_action_v">
+
+        <TextView
+            android:id="@+id/txt07"
+            style="@style/btn_num"
+            android:text="@string/btn_7" />
+
+        <TextView
+            android:id="@+id/txt08"
+            style="@style/btn_num"
+            android:text="@string/btn_8" />
+
+        <TextView
+            android:id="@+id/txt09"
+            style="@style/btn_num"
+            android:text="@string/btn_9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner2"
+        style="@style/line"
+        android:layout_above="@+id/liner3"
+        android:layout_toStartOf="@+id/liner_action_v">
+
+        <TextView
+            android:id="@+id/txt04"
+            style="@style/btn_num"
+            android:text="@string/btn_4" />
+
+        <TextView
+            android:id="@+id/txt05"
+            style="@style/btn_num"
+            android:text="@string/btn_5" />
+
+        <TextView
+            android:id="@+id/txt06"
+            style="@style/btn_num"
+            android:text="@string/btn_6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner3"
+        style="@style/line"
+        android:layout_above ="@+id/liner4"
+        android:layout_toStartOf="@+id/liner_action_v">
+
+        <TextView
+            android:id="@+id/txt01"
+            style="@style/btn_num"
+            android:text="@string/btn_1" />
+
+        <TextView
+            android:id="@+id/txt02"
+            style="@style/btn_num"
+            android:text="@string/btn_2" />
+
+        <TextView
+            android:id="@+id/txt03"
+            style="@style/btn_num"
+            android:text="@string/btn_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner4"
+        style="@style/line"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/liner_action_v">
+
+        <TextView
+            android:id="@+id/txt00"
+            style="@style/btn_num"
+            android:text="@string/btn_0" />
+
+        <TextView
+            android:id="@+id/txt_dot"
+            style="@style/btn_num_23"
+            android:text="@string/txt_dot" />
+    </LinearLayout>
+</RelativeLayout>

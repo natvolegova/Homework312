@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="btn_num">
+        <item name="android:background">@drawable/btn</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">68dp</item>
+    </style>
+
+    <style name="btn_num_23" parent="btn_num">
+        <item name="android:layout_weight">2</item>
+    </style>
+    <style name="btn_action" parent="btn_num">
+        <item name="android:background">@drawable/btn_action</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="result" parent="btn_num">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+    <style name="resultString" parent="result">
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+    <style name="line">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="line_vertical">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>
